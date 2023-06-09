@@ -70,7 +70,8 @@ def pregunta_03():
     Entrenamiento del modelo sobre todo el conjunto de datos.
     Complete el código presentado a continuación.
     """
-# Lea el archivo `gm_2008_region.csv` y asignelo al DataFrame `df`
+
+    # Lea el archivo `gm_2008_region.csv` y asignelo al DataFrame `df`
     df = pd.read_csv("gm_2008_region.csv")
 
     # Asigne a la variable los valores de la columna `fertility`
@@ -100,7 +101,6 @@ def pregunta_03():
 
     # Imprima el R^2 del modelo con 4 decimales
     print(reg.score(X_fertility, y_life).round(4))
-    
 
 
 def pregunta_04():
@@ -109,7 +109,7 @@ def pregunta_04():
     Complete el código presentado a continuación.
     """
 
-      # Importe LinearRegression
+    # Importe LinearRegression
     # Importe train_test_split
     # Importe mean_squared_error
     from sklearn.linear_model import LinearRegression
